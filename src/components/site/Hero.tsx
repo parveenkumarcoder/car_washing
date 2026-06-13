@@ -192,10 +192,10 @@ export function Hero() {
                 <p className="text-xs text-muted-foreground">Avg time</p>
                 <p className="text-lg font-bold text-gradient-aqua">45 min</p>
               </motion.div>
-            </div>
-          </motion.div>
             </motion.div>
           </motion.div>
+        </div>
+      </motion.div>
     </section>
   );
 }
