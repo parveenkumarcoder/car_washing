@@ -1,29 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { Services } from "@/components/site/Services";
+import { Packages } from "@/components/site/Packages";
+import { Process } from "@/components/site/Process";
+import { Stats } from "@/components/site/Stats";
+import { Gallery } from "@/components/site/Gallery";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Booking } from "@/components/site/Booking";
+import { FAQ } from "@/components/site/FAQ";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "AquaDrive — Premium Mobile Car Wash & Detailing" },
+      { name: "description", content: "Showroom shine delivered to your driveway. Eco-friendly mobile car wash, ceramic coating, and full detailing by trained pros." },
+      { property: "og:title", content: "AquaDrive — Premium Mobile Car Wash" },
+      { property: "og:description", content: "Book a premium mobile car wash in under 60 seconds. Eco-friendly, doorstep, showroom finish." },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen overflow-x-hidden bg-background">
+      <Navbar />
+      <Hero />
+      <Stats />
+      <Services />
+      <Packages />
+      <Process />
+      <Gallery />
+      <Testimonials />
+      <Booking />
+      <FAQ />
+      <Footer />
+    </main>
   );
 }
