@@ -40,12 +40,15 @@ export function Packages() {
           viewport={{ once: true }}
           className="mx-auto max-w-2xl text-center"
         >
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-aqua">Packages</p>
-          <h2 className="text-4xl font-black sm:text-5xl">
-            Pick your <span className="text-gradient-aqua">shine</span>
+          <p className="eyebrow mb-4 flex items-center justify-center gap-2">
+            <span className="h-px w-8 bg-aqua/60" /> 02 · Packages <span className="h-px w-8 bg-aqua/60" />
+          </p>
+          <h2 className="text-4xl font-medium tracking-[-0.03em] sm:text-5xl lg:text-[3.5rem]">
+            Pick your <span className="italic text-gradient-aqua">shine.</span>
           </h2>
-          <p className="mt-4 text-muted-foreground">Transparent pricing. No surprises. Cancel anytime.</p>
+          <p className="mt-5 text-[15px] text-muted-foreground">Transparent pricing. No surprises. Cancel anytime.</p>
         </motion.div>
+
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
           {packages.map((p, i) => (
