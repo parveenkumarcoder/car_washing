@@ -18,8 +18,7 @@ export function Gallery() {
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           className="mx-auto max-w-2xl text-center"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-aqua">Recent work</p>
@@ -33,8 +32,7 @@ export function Gallery() {
             <motion.div
               key={i}
               initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.08 }}
               className={`group relative overflow-hidden rounded-2xl ${it.span ?? ""}`}
             >

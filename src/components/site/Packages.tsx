@@ -36,8 +36,7 @@ export function Packages() {
       <div className="relative mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           className="mx-auto max-w-2xl text-center"
         >
           <p className="eyebrow mb-4 flex items-center justify-center gap-2">
@@ -55,8 +54,7 @@ export function Packages() {
             <motion.div
               key={p.name}
               initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
               className={`glass-card relative overflow-hidden rounded-3xl p-8 ${
                 p.featured ? "border-aqua/50 animate-pulse-glow lg:-translate-y-4 lg:scale-105" : ""

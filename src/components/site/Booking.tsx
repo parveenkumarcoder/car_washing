@@ -17,8 +17,7 @@ export function Booking() {
       <div className="relative mx-auto max-w-5xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           className="glass-card overflow-hidden rounded-3xl"
         >
           <div className="grid lg:grid-cols-5">

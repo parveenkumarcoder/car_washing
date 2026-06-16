@@ -14,8 +14,7 @@ export function Process() {
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           className="mx-auto max-w-2xl text-center"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-aqua">How it works</p>
@@ -33,8 +32,7 @@ export function Process() {
               <motion.div
                 key={s.title}
                 initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.12 }}
                 className="relative text-center"
               >
