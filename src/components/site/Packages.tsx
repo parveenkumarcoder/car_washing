@@ -37,7 +37,6 @@ export function Packages() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           className="mx-auto max-w-2xl text-center"
         >
           <p className="eyebrow mb-4 flex items-center justify-center gap-2">
@@ -56,7 +55,6 @@ export function Packages() {
               key={p.name}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className={`glass-card relative overflow-hidden rounded-3xl p-8 ${
                 p.featured ? "border-aqua/50 animate-pulse-glow lg:-translate-y-4 lg:scale-105" : ""

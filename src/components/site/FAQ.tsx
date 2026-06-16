@@ -19,7 +19,6 @@ export function FAQ() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           className="text-center"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-aqua">FAQ</p>
@@ -36,7 +35,6 @@ export function FAQ() {
               onClick={() => setOpen(open === i ? null : i)}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               className="glass-card flex w-full flex-col rounded-2xl p-6 text-left transition-colors hover:bg-secondary/30"
             >

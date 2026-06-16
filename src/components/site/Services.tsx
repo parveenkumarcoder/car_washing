@@ -20,7 +20,6 @@ export function Services() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end"
         >
           <div className="max-w-2xl">
@@ -45,7 +44,6 @@ export function Services() {
               key={s.title}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -6 }}
               className="group glass-card relative overflow-hidden rounded-3xl p-5 transition-all hover:border-aqua/30"

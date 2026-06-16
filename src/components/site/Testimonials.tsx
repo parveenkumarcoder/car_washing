@@ -14,7 +14,6 @@ export function Testimonials() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           className="mx-auto max-w-2xl text-center"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-aqua">Love letters</p>
@@ -29,7 +28,6 @@ export function Testimonials() {
               key={r.name}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className="glass-card relative rounded-3xl p-6"
             >
