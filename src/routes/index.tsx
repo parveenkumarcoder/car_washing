@@ -84,6 +84,7 @@ function Index() {
       <Booking />
       <FAQ />
       <Footer />
+      <AIAssistant />
     </main>
   );
 }
