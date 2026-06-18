@@ -74,13 +74,17 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-background">
+      <ScrollProgress />
+      <CursorGlow />
       <Navbar />
       <Hero />
+      <Marquee items={["Mobile detailing", "9H ceramic coating", "Paint correction", "Eco — 2 L per wash", "Trained technicians", "Doorstep service", "Est. 2014"]} />
       <Stats />
       <Services />
       <Packages />
       <Process />
       <Gallery />
+      <Marquee items={["12,400 cars finished", "4.9 average rating", "Mumbai · Delhi · Bangalore", "Booking in 60 seconds", "Written warranty"]} />
       <Testimonials />
       <Booking />
       <FAQ />
