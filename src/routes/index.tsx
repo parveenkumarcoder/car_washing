@@ -89,6 +89,7 @@ function Index() {
       <Testimonials />
       <Booking />
       <FAQ />
+      <Contact />
       <Footer />
       <AIAssistant />
     </main>
