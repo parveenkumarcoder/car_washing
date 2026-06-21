@@ -9,6 +9,7 @@ import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Booking } from "@/components/site/Booking";
 import { FAQ } from "@/components/site/FAQ";
+import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { AIAssistant } from "@/components/site/AIAssistant";
 import { ScrollProgress, CursorGlow, Marquee } from "@/components/site/MotionFX";
@@ -88,6 +89,7 @@ function Index() {
       <Testimonials />
       <Booking />
       <FAQ />
+      <Contact />
       <Footer />
       <AIAssistant />
     </main>
